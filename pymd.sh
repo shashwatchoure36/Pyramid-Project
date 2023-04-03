@@ -6,13 +6,13 @@ echo "__________________________________________"
 echo -n                                                                  #for next line
 read -p "Enter the Rows : " rows                                         #for user input
 
-for((i=0; i<=rows; i++))
+for((i=1; i<=rows; i++))
 do
-  for((j=2*(rows-i);j>=0;j--))
+  for((j=1; j<=(rows-i); j++))
     do
-        echo -n " "
+        echo -n "  "
     done
-  for((j=0;j<=i;j++))
+  for((j=1;j<=(2*i-1);j++))
     do
         echo -n "* "
     done
